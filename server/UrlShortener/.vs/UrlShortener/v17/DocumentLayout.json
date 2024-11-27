@@ -1,36 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F6C95835-2172-45AB-A9C2-4560B2E1C963}|TestProject\\TestProject.csproj|c:\\work\\inforce\\test task\\url shortener\\server\\urlshortener\\testproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6C95835-2172-45AB-A9C2-4560B2E1C963}|TestProject\\TestProject.csproj|solutionrelative:testproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
-        {
-          "DockedWidth": 628,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\TestProject\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "TestProject\\UnitTest1.cs",
-              "ToolTip": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\TestProject\\UnitTest1.cs",
-              "RelativeToolTip": "TestProject\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:43:29.077Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
         {
           "DockedWidth": 654,
           "SelectedChildIndex": -1,

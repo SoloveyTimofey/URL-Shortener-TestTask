@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.WebAPI", "UrlShortener.WebAPI\UrlShortener.WebAPI.csproj", "{7FB057C6-AB4D-4BC3-B528-0B12017A7E66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.WebAPI", "UrlShortener.WebAPI\UrlShortener.WebAPI.csproj", "{7FB057C6-AB4D-4BC3-B528-0B12017A7E66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.BussinessLogic", "UrlShortener.BussinessLogic\UrlShortener.BussinessLogic.csproj", "{111F8D4C-7318-48C4-8F54-EB3C910084AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.BussinessLogic", "UrlShortener.BussinessLogic\UrlShortener.BussinessLogic.csproj", "{111F8D4C-7318-48C4-8F54-EB3C910084AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.DataAccess", "UrlShortener.DataAccess\UrlShortener.DataAccess.csproj", "{C9D3FEAD-362B-4FF7-91F1-95633EDB861E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.DataAccess", "UrlShortener.DataAccess\UrlShortener.DataAccess.csproj", "{C9D3FEAD-362B-4FF7-91F1-95633EDB861E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Infrastructure", "UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj", "{8FC51675-11C3-4B05-B6BA-BE0C2E292866}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7EE41156-956F-4851-82B4-6143B9DFC2AE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{F6C95835-2172-45AB-A9C2-4560B2E1C963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.Infrastructure", "UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj", "{8FC51675-11C3-4B05-B6BA-BE0C2E292866}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,16 +33,9 @@ Global
 		{8FC51675-11C3-4B05-B6BA-BE0C2E292866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FC51675-11C3-4B05-B6BA-BE0C2E292866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FC51675-11C3-4B05-B6BA-BE0C2E292866}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6C95835-2172-45AB-A9C2-4560B2E1C963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6C95835-2172-45AB-A9C2-4560B2E1C963}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6C95835-2172-45AB-A9C2-4560B2E1C963}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6C95835-2172-45AB-A9C2-4560B2E1C963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F6C95835-2172-45AB-A9C2-4560B2E1C963} = {7EE41156-956F-4851-82B4-6143B9DFC2AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20224EFE-0D1B-49C0-B84D-DDBE3E913E1A}

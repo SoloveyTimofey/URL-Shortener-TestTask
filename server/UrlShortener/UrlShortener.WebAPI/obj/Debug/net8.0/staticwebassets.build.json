@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "o5N9x73SexXmBqi/X8vHc5tJVAKPeN+f3B6KAjqiF54=",
+  "Source": "UrlShortener.WebAPI",
+  "BasePath": "_content/UrlShortener.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
