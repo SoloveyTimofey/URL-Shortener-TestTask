@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UrlShortener.BussinessLogic\UrlShortener.BussinessLogic.csproj" />
+    <ProjectReference Include="..\UrlShortener.DataAccess.DbPopulator\UrlShortener.DataAccess.DbPopulator.csproj" />
+    <ProjectReference Include="..\UrlShortener.DataAccess\UrlShortener.DataAccess.csproj" />
+    <ProjectReference Include="..\UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

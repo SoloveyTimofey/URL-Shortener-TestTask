@@ -1,0 +1,13 @@
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\bin\Debug\net8.0\UrlShortener.Infrastructure.deps.json
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\bin\Debug\net8.0\UrlShortener.Infrastructure.dll
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\bin\Debug\net8.0\UrlShortener.Infrastructure.pdb
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.csproj.AssemblyReference.cache
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.AssemblyInfoInputs.cache
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.AssemblyInfo.cs
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.sourcelink.json
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.dll
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\refint\UrlShortener.Infrastructure.dll
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.pdb
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.Infrastructure\obj\Debug\net8.0\ref\UrlShortener.Infrastructure.dll

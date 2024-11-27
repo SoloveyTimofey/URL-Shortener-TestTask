@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.DataAccess", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.Infrastructure", "UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj", "{8FC51675-11C3-4B05-B6BA-BE0C2E292866}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{523FFEF4-8A0A-44E2-B182-73726E3EF708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.DataAccess.DbPopulator", "UrlShortener.DataAccess.DbPopulator\UrlShortener.DataAccess.DbPopulator.csproj", "{A5FB884C-7601-414E-B947-F357E0BA69E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{8FC51675-11C3-4B05-B6BA-BE0C2E292866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FC51675-11C3-4B05-B6BA-BE0C2E292866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FC51675-11C3-4B05-B6BA-BE0C2E292866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523FFEF4-8A0A-44E2-B182-73726E3EF708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523FFEF4-8A0A-44E2-B182-73726E3EF708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523FFEF4-8A0A-44E2-B182-73726E3EF708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523FFEF4-8A0A-44E2-B182-73726E3EF708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FB884C-7601-414E-B947-F357E0BA69E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FB884C-7601-414E-B947-F357E0BA69E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FB884C-7601-414E-B947-F357E0BA69E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FB884C-7601-414E-B947-F357E0BA69E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

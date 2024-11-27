@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZoY+M1aPvYo=",
+  "dgSpecHash": "k4oN67BHuPM=",
   "success": true,
   "projectFilePath": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\UrlShortener.Infrastructure\\UrlShortener.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Timofii\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Timofii\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
