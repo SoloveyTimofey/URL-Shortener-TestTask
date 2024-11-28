@@ -7,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddBussinessLogicServices()
     .AddDataAccessServices(builder.Configuration);
-   
+
+builder.Services.AddRazorPages();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -25,7 +26,11 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 
+app.UseStaticFiles();
+
+app.UseRouting();
 app.UseAuthorization();
+app.MapRazorPages();
 
 app.MapControllers();
 

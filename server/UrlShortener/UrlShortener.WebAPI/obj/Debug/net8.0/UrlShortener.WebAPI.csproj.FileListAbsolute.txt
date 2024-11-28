@@ -102,3 +102,6 @@ C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\bin\Debug\net8.0\UrlShortener.DataAccess.DbPopulator.pdb
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\obj\Debug\net8.0\UrlShortener.WebAPI.RazorAssemblyInfo.cache
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\obj\Debug\net8.0\UrlShortener.WebAPI.RazorAssemblyInfo.cs
+C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebAPI\bin\Debug\net8.0\UrlShortener.WebAPI.staticwebassets.runtime.json
