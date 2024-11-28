@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace UrlShortener.BussinessLogic.Utils;
 
-internal static class ShortenedUrlGenerator
+public static class ShortenedUrlGenerator
 {
     public static string ShortenUrl(string originalUrl)
     {

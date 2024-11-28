@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using UrlShortener.DataAccess.Context;
 using UrlShortener.DataAccess.Models;
-using UrlShortener.DataAccess.Repositories;
+using UrlShortener.DataAccess.Repositories.ShortenedUrlRepository;
 
 namespace UrlShortener.DataAccess;
 
@@ -33,10 +33,12 @@ public static class DataAccessServicesRegistration
 
         services.AddScoped<IShortenedUrlRepository, ShortenedUrlRepository>();
 
-        services.AddIdentityCore<IdentityUser>()
-            .AddRoles<IdentityRole>()
+        //services.AddIdentityCore<IdentityUser>()
+        //    .AddRoles<IdentityRole>()
+        //    .AddEntityFrameworkStores<UrlShortenerContext>();
+
+        services.AddIdentity<IdentityUser, IdentityRole>()
             .AddEntityFrameworkStores<UrlShortenerContext>();
-            
 
         return services;
     }

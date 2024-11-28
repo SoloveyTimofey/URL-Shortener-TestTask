@@ -1,0 +1,35 @@
+﻿@page
+@model UrlShortener.WebAPI.Pages.IndexModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Hello from Razor Pages!</h1>
+<button class="btn btn-primary">HEllo</button>
+<p>This is a Razor Page in a Web API project.</p>
+
+<div id="root"></div>
+
+@section scripts {
+    <script src="~/js/react/dist/bundle.js"></script>
+}
+
+<div id="data">
+
+</div>
+
+<script>
+    // fetch('api/ShortenUrl/GetShortenedUrls')
+    //     .then(Response => response.json())
+    //     .then(data => {
+    //         document.getElementById('data').innerText = JSON.stringify(data);
+    //     })
+    //     .catch(error => console.error('Error fetching data:', error));
+
+    fetch('api/ShortenUrl/GetShortenedUrls')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('data').innerText = JSON.stringify(data);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>

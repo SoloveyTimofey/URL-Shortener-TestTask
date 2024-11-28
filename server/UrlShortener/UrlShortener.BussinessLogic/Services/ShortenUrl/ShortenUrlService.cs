@@ -3,7 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using UrlShortener.BussinessLogic.Dtos;
 using UrlShortener.BussinessLogic.Utils;
 using UrlShortener.DataAccess.Models;
-using UrlShortener.DataAccess.Repositories;
+using UrlShortener.DataAccess.Context;
+using UrlShortener.DataAccess.Repositories.ShortenedUrlRepository;
+using Microsoft.AspNetCore.Identity;
+using UrlShortener.Infrastructure.Constants;
 
 namespace UrlShortener.BussinessLogic.Services.ShortenUrl;
 
@@ -11,14 +14,56 @@ internal class ShortenUrlService : IShortenUrlService
 {
     private readonly IShortenedUrlRepository _shortenedUrlRepository;
     private readonly IMapper _mapper;
-    public ShortenUrlService(IShortenedUrlRepository shortenedUrlRepository, IMapper mapper)
+    private readonly UserManager<IdentityUser> _userManager;
+    public ShortenUrlService(IShortenedUrlRepository shortenedUrlRepository, IMapper mapper, UserManager<IdentityUser> userManager)
     {
         _shortenedUrlRepository = shortenedUrlRepository;
         _mapper = mapper;
+        _userManager = userManager;
     }
 
-    public async Task<ICollection<ShortenedUrl>> GetAllShortenedUrlsAsync() =>
-        await _shortenedUrlRepository.GetAllShortenedUrls().ToListAsync();
+    public async Task<ICollection<ShortenedUrlReadDto>> GetAllShortenedUrlsAsync()
+    {
+        var shortenedUrls = _shortenedUrlRepository.GetAllShortenedUrls();
+
+        var shortenedUrlsWithFullInfo = shortenedUrls
+            .Include(url => url.Creator)
+            .Select(url => new ShortenedUrlReadDto
+            {
+                Id = url.Id,
+                CreatedAt = url.CreatedAt,
+                CreatorId = url.CreatorId,
+                OriginalUrl = url.OriginalUrl,
+                Shortened = url.Shortened,
+                CreatorName = url.Creator!.UserName!
+            });
+
+        return await shortenedUrlsWithFullInfo.ToListAsync();
+    }
+
+    public async Task<ICollection<ShortenedUrlReadForUnauthorizedUsersDto>> GetAllShortenedUrlsForUnathorizedUsersAsync()
+    {
+        var shortenedUrls = _shortenedUrlRepository.GetAllShortenedUrls();
+
+        var shortenedUrlsForUnathorized = shortenedUrls.Select(url => new ShortenedUrlReadForUnauthorizedUsersDto
+        {
+            Id = url.Id,
+            Shortened = url.Shortened,
+            OriginalUrl = url.OriginalUrl,
+        });
+
+        return await shortenedUrlsForUnathorized.ToListAsync();
+    }
+
+    public async Task<ShortenedUrl> GetFullUrlByShortenedAsync(GetFullUrlByShortenedDto getFullUrlByShortenedDto)
+    {
+        var shortenedUrls = _shortenedUrlRepository.GetAllShortenedUrls();
+
+        var targetUrl = await shortenedUrls.FirstAsync(shortenedUrl=>shortenedUrl.Shortened == getFullUrlByShortenedDto.ShortenedUrl)
+            ??  throw new ApplicationException(ExceptionMessages.FullUrlWithSpecifiedShortenedVersionNotFound);
+
+        return targetUrl;
+    }
 
     public async Task<ShortenedUrl> CreateShortenedUrlAsync(ShortenedUrlCreateDto shortenedUrlCreateDto)
     {

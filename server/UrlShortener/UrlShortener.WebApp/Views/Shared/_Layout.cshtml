@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <partial name="Navbar" />
+        @RenderBody()
+
+        <script>
+        $(document).ready(function () {
+        $("body").append("<p>jQuery is working!</p>");
+        });
+        </script>
+    </div>
+
+    <script src="~/js/react/dist/bundle.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

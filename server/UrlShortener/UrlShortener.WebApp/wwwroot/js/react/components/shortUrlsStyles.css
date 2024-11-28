@@ -1,0 +1,8 @@
+﻿.table-responsive td {
+    word-break: break-word;
+    white-space: normal;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}

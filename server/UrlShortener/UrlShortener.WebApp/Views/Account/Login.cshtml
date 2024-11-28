@@ -1,0 +1,29 @@
+﻿@using UrlShortener.WebApp.ViewModels.Account;
+@{
+    ViewData["Title"] = "Login";
+}
+
+@model LoginViewModel
+
+<div class="modal-dialog ">
+    <div class="modal-content rounded-3 shadow">
+        <div class="modal-header p-4 pb-1">
+            <h4 class="fw-bold">Login</h4>
+        </div>
+        <div class="modal-body p-4 p-1">
+            <div class="m-1 text-danger" asp-validation-summary="All"></div>
+            <form method="post" action="Login">
+                <div class="input-group mb-3">
+                    <label class="input-group-text">Email</label>
+                    <input type="text" class="form-control" asp-for="Email" placeholder="Enter Email..." />
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">Password</label>
+                    <input type="password" class="form-control" asp-for="Password" placeholder="Enter Password..." />
+                </div>
+                <button class="btn btn-primary">Login</button>
+                <a asp-action="Register" class="btn btn-outline-secondary ml-2">Register</a>
+            </form>
+        </div>
+    </div>
+</div>

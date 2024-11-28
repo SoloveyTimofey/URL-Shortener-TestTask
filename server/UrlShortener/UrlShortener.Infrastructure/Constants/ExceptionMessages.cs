@@ -18,6 +18,7 @@ public static class ExceptionMessages
     }
 
     public const string OriginalURLCannotBeNullOrEmpty = "Original URL cannot be null or empty.";
+    public const string FullUrlWithSpecifiedShortenedVersionNotFound = "Full url with specified shortened version not found.";
     #endregion
 
     public static IEnumerable<string> GetAllMessages()

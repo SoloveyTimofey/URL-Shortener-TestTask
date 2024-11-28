@@ -1,0 +1,24 @@
+﻿<div class="p-2 bg-dark">
+    <div class="d-flex flex-wrap align-items-center justify-content-center text-white">
+
+        <div class="nav me-auto">
+            <a asp-action="Index" asp-controller="Home" class="navbar-brand">Url Shortener</a>
+        </div>
+
+        @if (User?.Identity?.IsAuthenticated is true)
+        {
+
+            <div class="text-end mx-2">
+                <a asp-action="SignOut" asp-controller="Account" class="btn btn-outline-light me-2">Sign Out</a>
+            </div>
+        }
+        else
+        {
+            <div class="d-flex text-end mx-2">
+                <a asp-action="Login" asp-controller="Account" class="btn btn-outline-primary me-2">Login</a>
+                <a asp-action="Register" asp-controller="Account" class="btn btn-primary me-2">Register</a>
+            </div>
+        }
+
+    </div>
+</div>

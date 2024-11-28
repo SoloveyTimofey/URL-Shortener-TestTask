@@ -11,6 +11,7 @@ public class UrlShortenedProfile : Profile
         CreateMap<ShortenedUrl, ShortenedUrlReadDto>();
         CreateMap<ShortenedUrl, ShortenedUrlUpdateDto>();
         CreateMap<ShortenedUrl, ChangeOriginalUrlDto>();
+        CreateMap<ShortenedUrl, ShortenedUrlReadForUnauthorizedUsersDto>();
         CreateMap<ShortenedUrlCreateDto, ShortenedUrl>();
     }
 }

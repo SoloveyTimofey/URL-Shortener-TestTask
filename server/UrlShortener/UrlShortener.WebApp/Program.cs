@@ -1,25 +1,66 @@
+﻿using UrlShortener.BussinessLogic;
+using UrlShortener.DataAccess;
+using UrlShortener.DataAccess.DbPopulator;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services
+    .AddBussinessLogicServices()
+    .AddDataAccessServices(builder.Configuration);
+
 builder.Services.AddRazorPages();
+
+//builder.Services.AddControllers();
+builder.Services.AddControllersWithViews();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+DatabasePopulator.PopulateDbAsync(app);
+
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication(); // I don't know if it needs for now
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapControllers();
+
+//app.MapControllerRoute(
+//    name: "default",
+//pattern: "{controller=Home}/{action=Index}");
+
+//app.MapControllerRoute(
+//    name: "mvc",
+//    pattern: "{controller=Home}/{action=Index}/{id?}",
+//    defaults: null,
+//    constraints: null,
+//    dataTokens: new { Area = "MvcControllers" } // Для MVC-контроллеров
+//);
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}",
+    defaults: null,
+    constraints: null,
+    dataTokens: new { Area = "MvcControllers" } // Для MVC-контроллеров
+);
+
+app.MapControllerRoute(
+    name: "api",
+    pattern: "api/{controller=Home}/{action=Index}/{id?}"
+);
+
 
 app.Run();

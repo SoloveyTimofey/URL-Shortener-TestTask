@@ -1,10 +1,5 @@
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Tests
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\testhost.dll
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.WebAPI.deps.json
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.WebAPI.runtimeconfig.json
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\appsettings.Development.json
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\appsettings.json
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.WebAPI.exe
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\testhost.exe
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\NUnit3.TestAdapter.dll
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
@@ -162,11 +157,9 @@ C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.BussinessLogic.dll
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.DataAccess.dll
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.Infrastructure.dll
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.WebAPI.dll
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.BussinessLogic.pdb
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.DataAccess.pdb
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.Infrastructure.pdb
-C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\bin\Debug\net8.0\UrlShortener.WebAPI.pdb
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\obj\Debug\net8.0\Tests.csproj.AssemblyReference.cache
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\obj\Debug\net8.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\Tests\obj\Debug\net8.0\Tests.AssemblyInfoInputs.cache
