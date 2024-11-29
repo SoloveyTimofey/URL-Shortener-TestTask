@@ -3,8 +3,9 @@ using UrlShortener.BussinessLogic.Services.ShortenUrl;
 using UrlShortener.DataAccess.Models;
 using UrlShortener.DataAccess.Repositories.ShortenedUrlRepository;
 
-namespace Tests.BussinessLogic.ShortenUrl;
+namespace Tests.BussinessLogic.Services.ShortenUrl;
 
+//This test is not competed
 internal class ShortenUrlServiceTests
 {
     private IShortenedUrlRepository _shortenedUrlRepository;

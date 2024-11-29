@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using UrlShortener.BussinessLogic.Services.Identity;
 using UrlShortener.Infrastructure.Constants;
 
-namespace Tests.BussinessLogic.Identity;
+namespace Tests.BussinessLogic.Services.Identity;
 
 internal class IdentityServiceTests
 {

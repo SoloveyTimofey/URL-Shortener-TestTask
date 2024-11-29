@@ -18,22 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Work\Inforce\Test task\URL Shortener\server\UrlShortener\UrlShortener.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Work/Inforce/Test task/URL Shortener/server/UrlShortener/UrlShortener.WebApp/Pages/NotIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90SW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Work/Inforce/Test task/URL Shortener/server/UrlShortener/UrlShortener.WebApp/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Work/Inforce/Test task/URL Shortener/server/UrlShortener/UrlShortener.WebApp/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Work/Inforce/Test task/URL Shortener/server/UrlShortener/UrlShortener.WebApp/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Work/Inforce/Test task/URL Shortener/server/UrlShortener/UrlShortener.WebApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

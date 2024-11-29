@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrlShortener.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a59003f9d0e05735a3211848efb98b8e5346eff8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16410a5b6c38af864267b7e15284e91b63b76e91")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrlShortener.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrlShortener.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Security.Cryptography;
+using UrlShortener.Infrastructure.Constants;
 
 
 namespace UrlShortener.BussinessLogic.Utils;
@@ -10,7 +11,7 @@ public static class ShortenedUrlGenerator
     {
         if (string.IsNullOrWhiteSpace(originalUrl))
         {
-            throw new ArgumentException("Original URL cannot be null or empty.", nameof(originalUrl));
+            throw new ArgumentException(ExceptionMessages.OriginalURLCannotBeNullOrEmpty);
         }
 
         // Generating a hash from the original URL
