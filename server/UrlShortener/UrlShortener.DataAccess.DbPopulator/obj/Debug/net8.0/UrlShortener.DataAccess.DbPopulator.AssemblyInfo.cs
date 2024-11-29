@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrlShortener.DataAccess.DbPopulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a59003f9d0e05735a3211848efb98b8e5346eff8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+658670c4fcfed683219ef53d006d5bd9a34e335d")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrlShortener.DataAccess.DbPopulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrlShortener.DataAccess.DbPopulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
