@@ -5,7 +5,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using UrlShortener.BussinessLogic.Models;
-using UrlShortener.DataAccess.Models;
 using UrlShortener.Infrastructure.Constants;
 
 namespace UrlShortener.BussinessLogic.Services.Identity;

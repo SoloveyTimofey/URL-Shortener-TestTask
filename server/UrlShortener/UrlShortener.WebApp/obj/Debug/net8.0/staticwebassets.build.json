@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F+UAHkHErgx4eqKr9mGaYOxwiUF8i/BVj/qZ8kK1l3E=",
+  "Hash": "50b2Q6TUMM2IS3+68X24buXspETTlMhIVgJmxsGSksk=",
   "Source": "UrlShortener.WebApp",
   "BasePath": "_content/UrlShortener.WebApp",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\react\\services\\UrlShortenerApiService.js"
+    },
+    {
+      "Identity": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\UrlShortener.WebApp\\wwwroot\\js\\react\\utils\\AppendShortenedUrlToBaseAppPath.js",
+      "SourceId": "UrlShortener.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\UrlShortener.WebApp\\wwwroot\\",
+      "BasePath": "_content/UrlShortener.WebApp",
+      "RelativePath": "js/react/utils/AppendShortenedUrlToBaseAppPath.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\react\\utils\\AppendShortenedUrlToBaseAppPath.js"
     },
     {
       "Identity": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\UrlShortener.WebApp\\wwwroot\\js\\react\\webpack.config.js",

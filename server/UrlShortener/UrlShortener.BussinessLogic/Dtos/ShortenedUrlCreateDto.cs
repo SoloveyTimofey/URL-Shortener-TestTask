@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace UrlShortener.BussinessLogic.Dtos;
+﻿namespace UrlShortener.BussinessLogic.Dtos;
 
 public record ShortenedUrlCreateDto
 {

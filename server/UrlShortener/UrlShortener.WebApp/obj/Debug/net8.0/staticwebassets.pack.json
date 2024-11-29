@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\js\\react\\services\\UrlShortenerApiService.js"
     },
     {
+      "Id": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\UrlShortener.WebApp\\wwwroot\\js\\react\\utils\\AppendShortenedUrlToBaseAppPath.js",
+      "PackagePath": "staticwebassets\\js\\react\\utils\\AppendShortenedUrlToBaseAppPath.js"
+    },
+    {
       "Id": "C:\\Work\\Inforce\\Test task\\URL Shortener\\server\\UrlShortener\\UrlShortener.WebApp\\wwwroot\\js\\react\\webpack.config.js",
       "PackagePath": "staticwebassets\\js\\react\\webpack.config.js"
     },

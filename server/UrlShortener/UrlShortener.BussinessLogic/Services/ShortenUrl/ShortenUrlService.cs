@@ -3,9 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using UrlShortener.BussinessLogic.Dtos;
 using UrlShortener.BussinessLogic.Utils;
 using UrlShortener.DataAccess.Models;
-using UrlShortener.DataAccess.Context;
 using UrlShortener.DataAccess.Repositories.ShortenedUrlRepository;
-using Microsoft.AspNetCore.Identity;
 using UrlShortener.Infrastructure.Constants;
 
 namespace UrlShortener.BussinessLogic.Services.ShortenUrl;
@@ -14,12 +12,10 @@ internal class ShortenUrlService : IShortenUrlService
 {
     private readonly IShortenedUrlRepository _shortenedUrlRepository;
     private readonly IMapper _mapper;
-    private readonly UserManager<IdentityUser> _userManager;
-    public ShortenUrlService(IShortenedUrlRepository shortenedUrlRepository, IMapper mapper, UserManager<IdentityUser> userManager)
+    public ShortenUrlService(IShortenedUrlRepository shortenedUrlRepository, IMapper mapper)
     {
         _shortenedUrlRepository = shortenedUrlRepository;
         _mapper = mapper;
-        _userManager = userManager;
     }
 
     public async Task<ICollection<ShortenedUrlReadDto>> GetAllShortenedUrlsAsync()

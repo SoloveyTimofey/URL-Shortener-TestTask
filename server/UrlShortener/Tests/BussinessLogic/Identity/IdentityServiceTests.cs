@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
-using UrlShortener.BussinessLogic;
 using UrlShortener.BussinessLogic.Services.Identity;
-using UrlShortener.DataAccess.Models;
 using UrlShortener.Infrastructure.Constants;
 
 namespace Tests.BussinessLogic.Identity;
 
-internal class IdentityServiceTest
+internal class IdentityServiceTests
 {
     private IConfiguration _configuration;
     private UserManager<IdentityUser> _userManager;
@@ -181,21 +179,6 @@ internal class IdentityServiceTest
         //Assert
         Assert.Contains(errorDescription, result.Errors);
     }
-
-    //[Test]
-    //public async Task DeleteAccount_Successful_ResultSuccessful()
-    //{
-    //    //Assign
-    //    _userManager.FindByNameAsync(Arg.Any<string>()).Returns(Task.FromResult<ApplicationUser?>(new ApplicationUser { }));
-    //    _userManager.CheckPasswordAsync(Arg.Any<ApplicationUser>(), Arg.Any<string>()).Returns(true);
-    //    _userManager.DeleteAsync(Arg.Any<ApplicationUser>()).Returns(Task.FromResult(IdentityResult.Success));
-
-    //    //Act
-    //    var result = await _identityService.DeleteAccountAsync("testUser", "testPassword");
-
-    //    //Assert
-    //    Assert.True(result.Succeeded);
-    //}
     #endregion
 
     private void SetUserManagerFake()

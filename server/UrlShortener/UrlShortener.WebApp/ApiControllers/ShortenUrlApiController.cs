@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using UrlShortener.BussinessLogic.Dtos;
 using UrlShortener.BussinessLogic.Services.ShortenUrl;
-using UrlShortener.Infrastructure.Constants;
+using UrlShortener.Infrastructure.Utils;
 
 namespace UrlShortener.WebAPI.ApiControllers;
 
@@ -37,8 +38,14 @@ public class ShortenUrlApiController : ControllerBase
 
     [Authorize]
     [HttpPost, Route(nameof(CreateShortenedUrl))]
-    public async Task<IActionResult> CreateShortenedUrl(ShortenedUrlCreateDto shortenedUrlCreateDto)
+    public async Task<IActionResult> CreateShortenedUrl(string originalUrl)
     {
+        var shortenedUrlCreateDto = new ShortenedUrlCreateDto
+        {
+            OriginalUrl = originalUrl,
+            CreatorId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value!
+        };
+
         var createdUrl = await _shortenUrlService.CreateShortenedUrlAsync(shortenedUrlCreateDto);
 
         return Ok(_mapper.Map<ShortenedUrlReadDto>(createdUrl));
@@ -49,7 +56,7 @@ public class ShortenUrlApiController : ControllerBase
     {
         var fullUrl = await _shortenUrlService.GetFullUrlByShortenedAsync(getFullUrlByShortenedDto);
 
-        if (User.IsInRole(IdentityRoles.User)||User.IsInRole(IdentityRoles.Administrator))
+        if (User.IsInAnyRole())
         {
             return Ok(_mapper.Map<ShortenedUrlReadDto>(fullUrl));
         }

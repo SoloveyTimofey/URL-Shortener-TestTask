@@ -25,8 +25,4 @@
     <ProjectReference Include="..\UrlShortener.WebAPI\UrlShortener.WebAPI.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="BussinessLogic\ShortenUrl\" />
-  </ItemGroup>
-
 </Project>

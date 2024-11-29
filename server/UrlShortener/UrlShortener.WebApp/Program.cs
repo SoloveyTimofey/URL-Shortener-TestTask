@@ -31,30 +31,18 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication(); // I don't know if it needs for now
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers();
-
-//app.MapControllerRoute(
-//    name: "default",
-//pattern: "{controller=Home}/{action=Index}");
-
-//app.MapControllerRoute(
-//    name: "mvc",
-//    pattern: "{controller=Home}/{action=Index}/{id?}",
-//    defaults: null,
-//    constraints: null,
-//    dataTokens: new { Area = "MvcControllers" } // Для MVC-контроллеров
-//);
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}",
     defaults: null,
     constraints: null,
-    dataTokens: new { Area = "MvcControllers" } // Для MVC-контроллеров
+    dataTokens: new { Area = "MvcControllers" }
 );
 
 app.MapControllerRoute(

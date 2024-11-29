@@ -1118,20 +1118,6 @@
         "runtime": {
           "UrlShortener.Infrastructure.dll": {}
         }
-      },
-      "UrlShortener.WebAPI/1.0.0": {
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Microsoft.Extensions.DependencyInjection": "9.0.0",
-          "Swashbuckle.AspNetCore": "6.6.2",
-          "UrlShortener.BussinessLogic": "1.0.0",
-          "UrlShortener.DataAccess": "1.0.0",
-          "UrlShortener.DataAccess.DbPopulator": "1.0.0",
-          "UrlShortener.Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "UrlShortener.WebAPI.dll": {}
-        }
       }
     }
   },
@@ -1738,11 +1724,6 @@
       "sha512": ""
     },
     "UrlShortener.Infrastructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "UrlShortener.WebAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

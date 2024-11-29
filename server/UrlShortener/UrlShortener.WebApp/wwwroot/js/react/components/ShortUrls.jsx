@@ -2,12 +2,19 @@
 import { useState, useEffect } from "react"
 import { Table, Button } from 'react-bootstrap';
 import UrlShortenerApiService from '../services/UrlShortenerApiService'
-import './shortUrlsStyles.css'; 
+import './shortUrlsStyles.css';
+import AppendShortenedUrlToBaseAppPath from '../utils/AppendShortenedUrlToBaseAppPath'
 
-export default function ShortUrls() {
+export default function ShortUrls({ addNewUrlHandler }) {
     const urlShortenerApiService = new UrlShortenerApiService('https://localhost:7248/api');
     
     const [shortenedUrls, setShortenedUrls] = useState([]);
+
+    const handleAddNewUrl = (newUrl) => {
+        setShortenedUrls((prevUrls) => [...prevUrls, newUrl]);
+    };
+
+    addNewUrlHandler(handleAddNewUrl);
 
     useEffect(() => {
         console.log("UseEffect....");
@@ -16,7 +23,6 @@ export default function ShortUrls() {
             try {
                 const data = await urlShortenerApiService.getShortenedUrls();
                 setShortenedUrls(data); 
-                console.log(data); 
             } catch (error) {
                 console.error("Error fetching shortened URLs:", error);
             }
@@ -34,7 +40,6 @@ export default function ShortUrls() {
                         <th>#</th>
                         <th>Original URL</th>
                         <th>Shortened URL</th>
-                        <th style={{ width: '150px' }}>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,28 +52,14 @@ export default function ShortUrls() {
                                 </a>
                             </td>
                             <td className="text-wrap">
-                                <a href={url.shortenedUrl} target="_blank" rel="noopener noreferrer">
-                                    {url.shortened}
+                                <a href={AppendShortenedUrlToBaseAppPath(url.shortened)} target="_blank" rel="noopener noreferrer">
+                                    {AppendShortenedUrlToBaseAppPath(url.shortened)}
                                 </a>
-                            </td>
-                            <td style={{ width: '150px' }}>
-                                <Button variant="danger" className="btn-sm text-sm-start" onClick={() => handleDelete(url.id)}>
-                                    Delete
-                                </Button>
                             </td>
                         </tr>
                     ))}
                 </tbody>
             </Table>
         </div>
-
-
     )
-
-    function handleDelete(id) {
-        if (window.confirm("Are you sure you want to delete this URL?")) {
-            // Реализуйте удаление записи с помощью API
-            console.log("Deleted URL with ID:", id);
-        }
-    }
 }

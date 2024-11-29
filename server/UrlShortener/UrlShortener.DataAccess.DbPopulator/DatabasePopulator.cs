@@ -1,15 +1,11 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
+using UrlShortener.BussinessLogic.Dtos;
 using UrlShortener.BussinessLogic.Services.Identity;
+using UrlShortener.BussinessLogic.Services.ShortenUrl;
 using UrlShortener.DataAccess.Context;
 using UrlShortener.Infrastructure.Constants;
-using UrlShortener.DataAccess.Models;
-using UrlShortener.BussinessLogic.Utils;
-using UrlShortener.BussinessLogic.Services.ShortenUrl;
-using UrlShortener.BussinessLogic.Dtos;
-using UrlShortener.DataAccess.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 namespace UrlShortener.DataAccess.DbPopulator;
 public static class DatabasePopulator

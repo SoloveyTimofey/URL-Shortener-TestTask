@@ -4,5 +4,11 @@
     Layout = "_Layout";  
 }
 
+@if (User.IsInAnyRole())
+{
+    <div id="addShortenedUrl">
+    </div>
+}
+
 <div id="root">
 </div>
